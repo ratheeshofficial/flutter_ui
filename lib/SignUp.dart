@@ -9,6 +9,10 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+  void handleSignUp() {
+    print("clicked");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -83,7 +87,7 @@ class _SignUpState extends State<SignUp> {
                     // borderRadius: BorderRadius.circular(25.0),
 
                     // labelText: 'Email',
-                    hintText: "Email",
+                    hintText: "Emails",
                     // icon: Icon(Icons.people),
                   ),
                 ),
@@ -154,7 +158,8 @@ class _SignUpState extends State<SignUp> {
                     elevation: 60,
                   ),
                   onPressed: (() {
-                    print("Sign up pressed");
+                    // print("Sign up pressed");
+                    handleSignUp();
                   }),
                   child: Text(
                     "Sign up",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/HomePage.dart';
 import 'package:flutter_ui/SignIn.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
@@ -102,6 +103,6 @@ class IntroScreen extends StatelessWidget {
 
 goToSignIn(context) => Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (context) => SignIn(),
+        builder: (context) => HomePage(),
       ),
     );

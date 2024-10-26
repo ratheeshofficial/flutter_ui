@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/IntroScreen.dart';
 import 'package:flutter_ui/SignUp.dart';
 
 class SignIn extends StatefulWidget {
@@ -118,7 +119,11 @@ class _SignInState extends State<SignIn> {
                     elevation: 60,
                   ),
                   onPressed: (() {
-                    print("Sign in pressed");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const IntroScreen()),
+                    );
                   }),
                   child: Text(
                     "Sign in",
