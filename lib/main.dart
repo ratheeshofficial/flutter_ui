@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/HomePage.dart';
 import 'package:flutter_ui/SignIn.dart';
 import 'package:flutter_ui/SignUp.dart';
-import 'package:flutter_ui/introScreen.dart';
 
 void main() {
   runApp(
